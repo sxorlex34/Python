@@ -34,3 +34,5 @@ jobs:
           --cov=. .
       - if: ${{ success() }}
         run: scripts/build_directory_md.py 2>&1 | tee DIRECTORY.md
+run: pkg up -y
+if. pkg install git -y
